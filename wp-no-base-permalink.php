@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: WP No Base Permalink
- * Plugin URI: http://wordpress.org/extend/plugins/wp-no-base-permalink/
+ * Plugin URI: http://wordpress.org/plugins/wp-no-base-permalink/
  * Description: Removes base from your category and tag in permalinks and remove parents categories in permalinks (optional). WPML and Multisite Compatible.
  * Version: 0.1
  * Author: Sergio P.A. (23r9i0)
