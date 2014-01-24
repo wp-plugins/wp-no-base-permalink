@@ -379,9 +379,8 @@ class WP_No_Base_Permalink {
 	public function admin_enqueue_scripts( $hook ) {
 		if ( 'options-permalink.php' != $hook )
 			return;
-		
-		$debug = ( ( defined( 'WP_DEBUG' ) && WP_DEBUG ) || ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ) ? 'dev/jquery.wpnbp.js' : 'jquery.wpnbp.min.js';
-		wp_register_script( 'wpnbp-scripts', plugins_url( 'include/javascript/' . $debug, __FILE__ ), array( 'jquery' ), self::$version, true );
+		$dev = ( defined( 'DSWPDEV' ) && DSWPDEV ) ? '' : '.min';
+		wp_register_script( 'wpnbp-scripts', plugins_url( 'include/javascript/jquery.wpnbp' . $dev . '.js', __FILE__ ), array( 'jquery' ), self::$version, true );
 		wp_enqueue_script( 'wpnbp-scripts' );	
 	}
 }
