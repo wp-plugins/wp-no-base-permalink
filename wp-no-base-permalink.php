@@ -3,7 +3,7 @@
  * Plugin Name: WP No Base Permalink
  * Plugin URI: http://wordpress.org/plugins/wp-no-base-permalink/
  * Description: Removes base from your category and tag in permalinks and remove parents categories in permalinks (optional). WPML and Multisite Compatible.
- * Version: 0.2
+ * Version: 0.2.1
  * Author: Sergio P.A. (23r9i0)
  * Author URI: http://dsergio.com/
  *
@@ -45,7 +45,7 @@ class WP_No_Base_Permalink {
 		'old-tag-redirect' => 'tag', 'remove-parents-categories' => 1
 	);
 	
-	private static $version = '0.2';
+	private static $version = '0.2.1';
 	
 	public static function get_instance() {
 		if ( ! isset( self::$instance ) )
