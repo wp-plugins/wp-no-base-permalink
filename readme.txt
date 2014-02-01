@@ -4,7 +4,7 @@ Donate link:
 Tags: permalink, base, category, tag, parents, categories, parents categories
 Requires at least: 3.5
 Tested up to: 3.8
-Stable tag: 0.2.1
+Stable tag: 0.2.2
 License: GPL/MIT
 
 Removes base from your category.
@@ -24,6 +24,8 @@ Add Rewrites for oldest categories or tags base.
 
 
 == Changelog ==
+= 0.2.2 =
+* fix constant developer
 = 0.2.1 =
  * Update code for personal options (developer)
 = 0.2 =
