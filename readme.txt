@@ -1,5 +1,5 @@
-﻿=== WP No Base Permalink ===
-Contributors: 23r9i0 
+=== WP No Base Permalink ===
+Contributors: 23r9i0
 Donate link:
 Tags: permalink, base, category, tag, parents, categories, parents categories
 Requires at least: 3.5
@@ -33,3 +33,4 @@ Add Rewrites for oldest categories or tags base.
  * Fix 404 for not admin users
 = 0.1 =
  * init version
+
