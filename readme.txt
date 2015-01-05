@@ -3,7 +3,7 @@ Contributors: 23r9i0
 Donate link:
 Tags: permalink, base, category, tag, parents, categories, parents categories
 Requires at least: 3.5
-Tested up to: 3.8
+Tested up to: 4.1
 Stable tag: 0.2.2
 License: GPL/MIT
 

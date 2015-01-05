@@ -45,7 +45,7 @@ class WP_No_Base_Permalink {
 		'old-tag-redirect' => 'tag', 'remove-parents-categories' => 1
 	);
 
-	private static $version = '0.2.1';
+	private static $version = '0.2.2';
 
 	public static function get_instance() {
 		if ( ! isset( self::$instance ) )
@@ -96,10 +96,11 @@ class WP_No_Base_Permalink {
 		add_filter( 'category_rewrite_rules', array( __CLASS__, 'category_rewrite_rules' ), 11 );
 
 		// Remove Parents Categories
-		if ( isset( self::$options['remove-parents-categories'] )  )
+		if ( isset( self::$options['remove-parents-categories'] )  ) {
 			add_filter( 'category_link', array( $this, 'remove_parents_category_link' ), 10, 2 );
-		else
+		} else {
 			remove_filter( 'category_link', array( $this, 'remove_parents_category_link' ), 10, 2 );
+		}
 
 		// Tags
 		if ( isset( self::$options['disabled-tag-base'] )  ) {
